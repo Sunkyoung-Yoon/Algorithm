@@ -70,4 +70,8 @@
 ### 출력 
 
  <p>입력으로 주어진 단어가 몇 개의 크로아티아 알파벳으로 이루어져 있는지 출력한다.</p>
+ 
+ 
+풀이를 작성한 블로그주소 입니다.
+https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-2941%EB%B2%88-%ED%81%AC%EB%A1%9C%EC%95%84%ED%8B%B0%EC%95%84-%EC%95%8C%ED%8C%8C%EB%B2%B3-JAVA%EC%9E%90%EB%B0%94
 
