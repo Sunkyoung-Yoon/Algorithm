@@ -24,3 +24,5 @@
 
  <p>첫째 줄에 그룹 단어의 개수를 출력한다.</p>
 
+풀이 작성한 블로그 주소입니다.
+https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-1316%EB%B2%88-%EA%B7%B8%EB%A3%B9-%EB%8B%A8%EC%96%B4-%EC%B2%B4%EC%BB%A4-JAVA%EC%9E%90%EB%B0%94
