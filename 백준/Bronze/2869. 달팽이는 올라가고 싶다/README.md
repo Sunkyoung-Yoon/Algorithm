@@ -26,3 +26,4 @@
 
  <p>첫째 줄에 달팽이가 나무 막대를 모두 올라가는데 며칠이 걸리는지 출력한다.</p>
 
+풀이를 작성한 블로그 주소입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-2869%EB%B2%88-%EB%8B%AC%ED%8C%BD%EC%9D%B4%EB%8A%94-%EC%98%AC%EB%9D%BC%EA%B0%80%EA%B3%A0-%EC%8B%B6%EB%8B%A4-JAVA%EC%9E%90%EB%B0%94
