@@ -78,4 +78,5 @@
 ### 출력 
 
  <p>첫째 줄에 분수를 출력한다.</p>
-
+ 
+ 풀이를 작성한 블로그 주소입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-1193%EB%B2%88-%EB%B6%84%EC%88%98%EC%B0%BE%EA%B8%B0-JAVA%EC%9E%90%EB%B0%94
