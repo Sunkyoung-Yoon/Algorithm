@@ -26,3 +26,4 @@
 
  <p>각각의 Test case에 대해서 해당 집에 거주민 수를 출력하라.</p>
 
+풀이를 작성한 블로그 입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-2775%EB%B2%88-%EB%B6%80%EB%85%80%ED%9A%8C%EC%9E%A5%EC%9D%B4-%EB%90%A0%ED%85%8C%EC%95%BC-JAVA%EC%9E%90%EB%B0%94
