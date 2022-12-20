@@ -22,3 +22,5 @@
 
  <p>첫째 줄에 A+B를 출력한다.</p>
 
+풀이를 작성한 블로그입니다.
+https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-10757%EB%B2%88-%ED%81%B0-%EC%88%98-AB-JAVA%EC%9E%90%EB%B0%94
