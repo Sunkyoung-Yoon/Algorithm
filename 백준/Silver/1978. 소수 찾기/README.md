@@ -22,3 +22,4 @@
 
  <p>주어진 수들 중 소수의 개수를 출력한다.</p>
 
+블로그 주소입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-1978%EB%B2%88-%EC%86%8C%EC%88%98-%EC%B0%BE%EA%B8%B0-JAVA%EC%9E%90%EB%B0%94
