@@ -8,12 +8,13 @@ public class Main {
 		
 		int n = 123456;
 		boolean check[] = new boolean[n*2+1];
-		for(int i=2; i<=2*n; i++)
-			check[i]=true;
+		
+		check[0] = false; //0은 소수아님
+		check[1] = false; //1은 소수아님
 		
 		for(int i=2; i<=Math.sqrt(2*n); i++) {
 			for(int j=i+i; j<=2*n; j+=i) {
-				check[j]=false;
+				check[j]=true;
 			}
 		}
 		
@@ -25,7 +26,7 @@ public class Main {
 				break;
 			
 			for(int num=N+1; num<=2*N; num++) {
-				if(check[num])
+				if(!check[num])
 					cnt++;
 			}
 			System.out.println(cnt);
