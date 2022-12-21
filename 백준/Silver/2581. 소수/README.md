@@ -28,3 +28,5 @@
 
 <p>단, M이상 N이하의 자연수 중 소수가 없을 경우는 첫째 줄에 -1을 출력한다.</p>
 
+풀이를 작성한 블로그입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-2581%EB%B2%88-%EC%86%8C%EC%88%98-JAVA%EC%9E%90%EB%B0%94
+
