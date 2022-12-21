@@ -29,4 +29,5 @@
 ### 출력 
 
  <p>각 테스트 케이스에 대해서, n보다 크고, 2n보다 작거나 같은 소수의 개수를 출력한다.</p>
-
+ 
+ 풀이를 작성한 글 주소입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-4948%EB%B2%88-%EB%B2%A0%EB%A5%B4%ED%8A%B8%EB%9E%91-%EA%B3%B5%EC%A4%80-JAVA%EC%9E%90%EB%B0%94
