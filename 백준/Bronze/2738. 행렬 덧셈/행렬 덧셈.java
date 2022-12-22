@@ -22,17 +22,13 @@ public class Main {
 				A[i][j]=Integer.parseInt(st.nextToken());
 			}
 		}
-		//행렬 B 2차원배열에 저장
+		
+		//행렬 A, B 더하기
 		for(int i=0; i<N; i++) {
 			st = new StringTokenizer(br.readLine());
 			for(int j=0; j<M; j++) {
-				B[i][j]=Integer.parseInt(st.nextToken());
-			}
-		}
-		//더한 행렬
-		for(int i=0; i<N; i++) {
-			for(int j=0; j<M; j++) {
-				sb.append((A[i][j]+B[i][j])+" ");
+				int result = A[i][j]+Integer.parseInt(st.nextToken());
+				sb.append(result+" ");
 			}
 			sb.append("\n");
 		}
