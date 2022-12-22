@@ -22,3 +22,4 @@
 
  <p>첫째 줄부터 N개의 줄에 행렬 A와 B를 더한 행렬을 출력한다. 행렬의 각 원소는 공백으로 구분한다.</p>
 
+풀이를 작성한 글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-2738%EB%B2%88-%ED%96%89%EB%A0%AC-%EB%8D%A7%EC%85%88-JAVA%EC%9E%90%EB%B0%94
