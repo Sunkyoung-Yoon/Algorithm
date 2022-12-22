@@ -29,7 +29,7 @@ public class Main {
 			int b=0;
 			
 			//i가 n/2에 가까워질수록 i와 n-i의 차는 작아짐
-			for(int i=1; i<=n/2; i++) {
+			for(int i=2; i<=n/2; i++) {
 				//i와 n-i가 소수라면
 				if(!check[i] && !check[n-i]){
 					a=i;
