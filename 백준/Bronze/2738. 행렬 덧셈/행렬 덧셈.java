@@ -13,7 +13,6 @@ public class Main {
 		int M = Integer.parseInt(st.nextToken());
 		
 		int[][] A = new int[N][M];
-		int[][] B = new int[N][M];
 		
 		//행렬 A 2차원배열에 저장
 		for(int i=0; i<N; i++) {
