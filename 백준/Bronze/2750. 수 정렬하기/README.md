@@ -22,3 +22,4 @@
 
  <p>첫째 줄부터 N개의 줄에 오름차순으로 정렬한 결과를 한 줄에 하나씩 출력한다.</p>
 
+ <p>풀이 작성글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-2750%EB%B2%88-%EC%88%98-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0-JAVA%EC%9E%90%EB%B0%94<
