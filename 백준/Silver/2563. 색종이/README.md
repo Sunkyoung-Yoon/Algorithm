@@ -25,4 +25,4 @@
 ### 출력 
 
  <p>첫째 줄에 색종이가 붙은 검은 영역의 넓이를 출력한다.</p>
-
+ <p>풀이를 작성한 글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-2563%EB%B2%88-%EC%83%89%EC%A2%85%EC%9D%B4-JAVA%EC%9E%90%EB%B0%94<
