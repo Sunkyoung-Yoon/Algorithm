@@ -27,4 +27,4 @@
 ### 출력 
 
  <p>상을 받는 커트라인을 출력하라.</p>
-
+ <p>풀이를 작성한글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-25305%EB%B2%88-%EC%BB%A4%ED%8A%B8%EB%9D%BC%EC%9D%B8-JAVA%EC%9E%90%EB%B0%94</
