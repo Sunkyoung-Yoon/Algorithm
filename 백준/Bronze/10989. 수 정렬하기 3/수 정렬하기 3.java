@@ -8,16 +8,11 @@ public class Main {
 		StringBuilder sb = new StringBuilder();
 		int N = Integer.parseInt(br.readLine());
 		
-		int[] arr = new int[N];
 		int[] counting = new int[10001]; //배열은 0부터 시작하므로 +1
-		
-		for(int i=0; i<N; i++) {
-			arr[i]=Integer.parseInt(br.readLine());
-		}
 		
 		//입력받은 수 등장횟수 카운트
 		for(int i=0; i<N; i++) {
-			counting[arr[i]]++;
+			counting[Integer.parseInt(br.readLine())]++;
 		}
 		
 		for(int i=0; i<10001; i++) {
