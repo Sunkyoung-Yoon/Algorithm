@@ -15,7 +15,7 @@ public class Main {
 			counting[Integer.parseInt(br.readLine())]++;
 		}
 		
-		for(int i=0; i<10001; i++) {
+		for(int i=1; i<10001; i++) {
 			if(counting[i]!=0) {
 				sb.append(i).append("\n");
 				counting[i]--; //출력후 등장횟수 -1
