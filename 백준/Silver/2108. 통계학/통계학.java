@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.*;
 
 public class Main {
 
@@ -10,21 +11,26 @@ public class Main {
 		
 		int[] counting_arr = new int[8001]; //-4000 ~ 4000
 		double sum =0.0;
-		int max_range = -4001; //최댓값
-		int min_range = 4001; //최솟값
+		
 		for(int i=0; i<N; i++) {
 			int n = Integer.parseInt(br.readLine());
 			counting_arr[n+4000]++;
 			sum+=n;
-			max_range=Math.max(max_range, n);
-			min_range=Math.min(min_range, n);
 		}
+		
+		
 		
 		int max = 0; //최대등장횟수
 		boolean max_flag = false; //max 개수가 2개이상인지 판별 
 		int mode = 0; //최빈값
+		
 		int median_count = 0;//중앙값 위치확인할 변수
 		int median = 0; //중앙값
+		
+		int max_range = -4001; //최댓값
+		int min_range = 4001; //최솟값
+		
+		
 		for(int i=0; i<8001; i++) {
 			if(counting_arr[i]==0)
 				continue;
@@ -46,6 +52,9 @@ public class Main {
 				mode = i-4000;
 				max_flag=false;
 			}
+			//범위 확인을 위한 min, max 저장
+			max_range=Math.max(max_range, i-4000);
+			min_range=Math.min(min_range, i-4000);
 		}
 		
 		sb.append(Math.round(sum/N)+"\n"); //산술평균
