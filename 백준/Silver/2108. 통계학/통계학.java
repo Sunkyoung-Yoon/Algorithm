@@ -22,29 +22,24 @@ public class Main {
 		Arrays.sort(arr);
 		
 		int max = 0; //최대등장횟수
-		int count = 0; //max 개수 
+		boolean max_flag = false; //max 개수가 2개이상인지 판별 
 		int mode = 0; //최빈값
-		for(int i=0; i<8001; i++) {
-			if(counting_arr[i]!=0) {
-				max = Math.max(max, counting_arr[i]);
-			}
-		}
 		
 		for(int i=0; i<8001; i++) {
-			//max만큼 등장항 i 최빈값에 저장
-			if(max==counting_arr[i]) {
+			if(counting_arr[i]==0)
+				continue;
+			if(max<counting_arr[i]) {
+				max=counting_arr[i];
 				mode = i-4000;
-				count++;
+				max_flag=true;
 			}
-			//같은 횟수가 2번이상 나오면 두번째로
-			if(count==2) { 
-				//크기순으로 돌기 때문에 두번째로 나온 i가 두번째로 작은 값
-				// 2,2 3,3 ->최빈값 3
-				// -5,-5 -1,-1 0,0 ->최빈값 -1
+			//max와 같은 등장횟수 2번째 등장
+			//더 큰 max가 등장하지 않으면 두번째 작은 값이 최빈값에 저장됨
+			//2,2 3,3 4,4인 경우 숫자 4일 때 max가 변경되지 않기 때문에 mode=3이다.
+			else if(max_flag==true && max==counting_arr[i]) {
 				mode = i-4000;
-				break;
+				max_flag=false;
 			}
-			
 		}
 		
 		sb.append(Math.round(sum/N)+"\n"); //산술평균
