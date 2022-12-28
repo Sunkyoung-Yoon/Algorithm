@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 public class Main {
 
@@ -9,25 +8,32 @@ public class Main {
 		StringBuilder sb = new StringBuilder();
 		int N = Integer.parseInt(br.readLine());
 		
-		int[] arr = new int[N];
 		int[] counting_arr = new int[8001]; //-4000 ~ 4000
 		double sum =0.0;
-		
+		int max_range = -4001; //최댓값
+		int min_range = 4001; //최솟값
 		for(int i=0; i<N; i++) {
 			int n = Integer.parseInt(br.readLine());
 			counting_arr[n+4000]++;
-			arr[i]=n;
 			sum+=n;
+			max_range=Math.max(max_range, n);
+			min_range=Math.min(min_range, n);
 		}
-		Arrays.sort(arr);
 		
 		int max = 0; //최대등장횟수
 		boolean max_flag = false; //max 개수가 2개이상인지 판별 
 		int mode = 0; //최빈값
-		
+		int median_count = 0;//중앙값 위치확인할 변수
+		int median = 0; //중앙값
 		for(int i=0; i<8001; i++) {
 			if(counting_arr[i]==0)
 				continue;
+			
+			//중앙값에 해당하는 범위가 될 때 마지막으로 median변경
+			if(median_count<N/2+1) {
+				median_count+=counting_arr[i];
+				median=i-4000;
+			}
 			if(max<counting_arr[i]) {
 				max=counting_arr[i];
 				mode = i-4000;
@@ -43,9 +49,9 @@ public class Main {
 		}
 		
 		sb.append(Math.round(sum/N)+"\n"); //산술평균
-		sb.append(arr[N/2]+"\n"); //중앙값
+		sb.append(median+"\n"); //중앙값
 		sb.append(mode+"\n"); //최빈값
-		sb.append(arr[arr.length-1]-arr[0]+"\n"); //범위
+		sb.append(max_range - min_range+"\n"); //범위
 		
 		
 		System.out.print(sb);
