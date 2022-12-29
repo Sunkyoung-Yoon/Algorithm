@@ -22,3 +22,4 @@
 
  <p>첫째 줄에 자리수를 내림차순으로 정렬한 수를 출력한다.</p>
 
+ <p>풀이를 작성한 글을 추가한다.https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-1427%EB%B2%88-%EC%86%8C%ED%8A%B8%EC%9D%B8%EC%82%AC%EC%9D%B4%EB%93%9C-JAVA%EC%9E%90%EB%B0%94</p>
