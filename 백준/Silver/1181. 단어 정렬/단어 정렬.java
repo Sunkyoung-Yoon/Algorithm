@@ -16,19 +16,7 @@ public class Main {
 		}
 		
 		//Arrays.sort() 정렬조건 정의
-		Arrays.sort(str, new Comparator<String>() {
-			@Override
-			public int compare(String o1, String o2) {
-				//길이가 같다면
-				if(o1.length()==o2.length())
-					//사전 순대로
-					return o1.compareTo(o2);
-				else
-					//길이가 작은것 부터
-					return o1.length()-o2.length();
-			}
-			
-		});
+		Arrays.sort(str, (String o1, String o2)->o1.length()==o2.length()?o1.compareTo(o2):o1.length()-o2.length());
 		
 		sb.append(str[0]).append("\n"); //0번째 문자는 무조건 처음 등장한 단어
 		//중복단어 제거
@@ -36,7 +24,7 @@ public class Main {
 			//현재 인덱스 위치 문자와 바로전 인덱스 위치의 문자가 같다면
 			if(str[i].equals(str[i-1]))
 				continue;
-			//같지 않다면 
+			//같지 않다
 			else
 				sb.append(str[i]).append("\n");
 		}
