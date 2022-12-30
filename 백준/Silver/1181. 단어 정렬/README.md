@@ -27,3 +27,4 @@
 
  <p>조건에 따라 정렬하여 단어들을 출력한다. 단, 같은 단어가 여러 번 입력된 경우에는 한 번씩만 출력한다.</p>
 
+ <p>comparator를 재정의항 풀이와 람다식으로 표현한 최종 풀이를 작성한 글을 추가한다.https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-1181%EB%B2%88-%EB%8B%A8%EC%96%B4%EC%A0%95%EB%A0%AC-JAVA%EC%9E%90%EB%B0%94</p>
