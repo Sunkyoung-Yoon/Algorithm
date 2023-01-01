@@ -22,3 +22,4 @@
 
  <p>첫째 줄에 N!을 출력한다.</p>
 
+ <p>풀이를 작성한 글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-10872%EB%B2%88-%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC-JAVA%EC%9E%90%EB%B0%94</p>
