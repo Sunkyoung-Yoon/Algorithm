@@ -28,7 +28,6 @@ public class Main {
 	}	
 	
 	public static void merge_sort(int A[], int start, int end) { // A[p..r]을 오름차순 정렬한다.
-		if (count > K) return ; //저장횟수가 K보다 커지면 결과는 -1
 		if (start < end) {
 	        int mid = (start + end) / 2;      // q는 p, r의 중간 지점
 	        merge_sort(A, start, mid);      // 전반부 정렬
