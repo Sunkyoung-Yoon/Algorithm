@@ -48,6 +48,7 @@ merge(A[], p, q, r) {
 ### 입력 
 
  <p>첫째 줄에 배열 A의 크기 <em>N</em>(5 ≤ <em>N</em> ≤ 500,000), 저장 횟수 <em>K</em>(1 ≤ <em>K</em> ≤ 10<sup>8</sup>)가 주어진다.</p>
+ <p>풀이를 작성한 글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-24060%EB%B2%88-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%88%98%EC%97%85-%EB%B3%91%ED%95%A9-%EC%A0%95%EB%A0%AC-1-JAVA%EC%9E%90%EB%B0%94</>
 
 <p>다음 줄에 서로 다른 배열 A의 원소 A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>N</sub>이 주어진다. (1 ≤ A<sub>i</sub> ≤ 10<sup>9</sup>)</p>
 
