@@ -30,3 +30,4 @@
 
  <p>첫째 줄부터 N번째 줄까지 별을 출력한다.</p>
 
+ <p>풀이를 작성한 글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-2447%EB%B2%88-%EB%B3%84-%EC%B0%8D%EA%B8%B0-10-JAVA%EC%9E%90%EB%B0%94</p>
