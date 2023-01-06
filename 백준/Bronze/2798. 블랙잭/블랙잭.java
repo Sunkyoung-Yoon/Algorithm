@@ -23,8 +23,8 @@ public class Main {
 	public static int blackjack(int[] arr, int N, int M) {
 		int bestCase = 0;
 		
-		for(int i = 0; i<N-2; i++) {			
-			for(int j = i+1; j<N-1; j++) {
+		for(int i = 0; i<N; i++) {			
+			for(int j = i+1; j<N; j++) {
 				for(int k = j+1; k<N; k++) {
 					
 					int sum = arr[i]+arr[j]+arr[k];
