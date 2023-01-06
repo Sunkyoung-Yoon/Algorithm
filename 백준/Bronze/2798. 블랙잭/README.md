@@ -32,3 +32,4 @@
 
  <p>첫째 줄에 M을 넘지 않으면서 M에 최대한 가까운 카드 3장의 합을 출력한다.</p>
 
+ <p>풀이를 작성한 글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-2798%EB%B2%88-%EB%B8%94%EB%9E%99%EC%9E%AD-JAVA%EC%9E%90%EB%B0%94</p>
