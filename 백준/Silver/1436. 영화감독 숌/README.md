@@ -30,3 +30,4 @@
 
  <p>첫째 줄에 N번째 영화의 제목에 들어간 수를 출력한다.</p>
 
+ <p>풀이를 자세히 작성한 글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-1436%EB%B2%88-%EC%98%81%ED%99%94%EA%B0%90%EB%8F%85-%EC%88%8C-JAVA%EC%9E%90%EB%B0%94</p>
