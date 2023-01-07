@@ -30,3 +30,4 @@
 
  <p>첫째 줄에 M개의 문자열 중에 총 몇 개가 집합 S에 포함되어 있는지 출력한다.</p>
 
+ <p>풀이를 자세히 작성한 글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-14425%EB%B2%88-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%A7%91%ED%95%A9-JAVA%EC%9E%90%EB%B0%94<
