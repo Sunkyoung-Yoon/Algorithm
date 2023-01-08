@@ -33,7 +33,6 @@ public class Main {
 				sb.append(str_map.get(str)).append("\n");
 			}
 		}
-		
 		System.out.println(sb);
 		
 	}
