@@ -132,3 +132,4 @@
 
 <p>이게 오박사님이 나에게 새로 주시려고 하는 도감이야. 너무 가지고 싶다ㅠㅜ. 꼭 만점을 받아줬으면 좋겠어!! 파이팅!!!</p>
 
+<p>풀이를 작성한 글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-1620%EB%B2%88-%EB%82%98%EB%8A%94%EC%95%BC-%ED%8F%AC%EC%BC%93%EB%AA%AC-%EB%A7%88%EC%8A%A4%ED%84%B0-%EC%9D%B4%EB%8B%A4%EC%86%9C-JAVA%EC%9E%90%EB%B0%94</p>
