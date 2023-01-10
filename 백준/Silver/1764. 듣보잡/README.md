@@ -24,3 +24,4 @@
 
  <p>듣보잡의 수와 그 명단을 사전순으로 출력한다.</p>
 
+ <p>풀이를 자세히 설명한 글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-1764%EB%B2%88-%EB%93%A3%EB%B3%B4%EC%9E%A1-JAVA%EC%9E%90%EB%B0%94</p>
