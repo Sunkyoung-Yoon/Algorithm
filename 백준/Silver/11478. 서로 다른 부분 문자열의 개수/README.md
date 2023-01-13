@@ -26,3 +26,4 @@
 
  <p>첫째 줄에 S의 서로 다른 부분 문자열의 개수를 출력한다.</p>
 
+ <p>풀이를 작성한 글입니다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-11478%EB%B2%88-%EC%84%9C%EB%A1%9C-%EB%8B%A4%EB%A5%B8-%EB%B6%80%EB%B6%84-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98-%EA%B0%9C%EC%88%98-JAVA%EC%9E%90%EB%B0%94</p>
