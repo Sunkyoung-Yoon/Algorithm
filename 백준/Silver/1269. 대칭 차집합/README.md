@@ -23,3 +23,4 @@
 
  <p>첫째 줄에 대칭 차집합의 원소의 개수를 출력한다.</p>
 
+ <p>풀이를 작성한 긍입이다. https://chobo24.tistory.com/entry/%EB%B0%B1%EC%A4%80-1269%EB%B2%88-%EB%8C%80%EC%B9%AD-%EC%B0%A8%EC%A7%91%ED%95%A9-JAVA%EC%9E%90%EB%B0%94</p>
