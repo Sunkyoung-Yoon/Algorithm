@@ -1,10 +1,16 @@
 class Solution {
     public String solution(String phone_number) {
-        String answer = phone_number.substring(0,phone_number.length()-4);
-        answer = answer.replaceAll("[0-9]","*"); //뒷 4자리 제외 모두 *로 변경
+        String str = "";
+        char[] ch = phone_number.toCharArray();
         
-        answer = answer+phone_number.substring(phone_number.length()-4, phone_number.length());
+        for(int i=0; i<ch.length-4; i++){
+            ch[i] = '*';
+        }
         
-        return answer;
+        for(int i=0; i<ch.length; i++){
+            str += ch[i];
+        }
+        
+        return str;
     }
 }
