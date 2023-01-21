@@ -1,14 +1,14 @@
 class Solution {
     public int solution(int n) {
         int answer = 0;
-        boolean[] check = new boolean[1000001];
+        boolean[] check = new boolean[n+1];
         
         //0과 1은 소수가 아님
         check[0] = true;
         check[1] = true;
-        //n의 최대범위까지 소수가 아닌 수는 true로 변경
-        for(int i=2; i<Math.sqrt(1000001); i++){
-            for(int j=i+i; j<1000001; j+=i){
+        //소수가 아닌수는 true
+        for(int i=2; i<Math.sqrt(n+1); i++){
+            for(int j=i+i; j<n+1; j+=i){
                 check[j] = true;
             }
         }
