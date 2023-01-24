@@ -18,16 +18,13 @@ class Solution {
             if(lottos[i]==0) zero_count++;
         }
         
-        //1개이하로 맞춘 경우는 최소6등, 최대1등
-        if(count<=1){
-            answer[1] = 6;
-            if(zero_count==0) answer[0] = 6;
-            else answer[0] = 7-count-zero_count;
-        } 
-        else { //2개이상 맞춘 경우는 7에서 count, zero_count 빼기
-            answer[1] = 7-count;
-            answer[0] = 7-count-zero_count;
-        }
+        answer[0] = 7-count-zero_count;
+        answer[1] = 7-count;
+        
+        //7이 되는 경우 6등으로 변경
+        if(answer[0]>6) answer[0]=6;
+        if(answer[1]>6) answer[1]=6;
+        
             
         return answer;
     }
