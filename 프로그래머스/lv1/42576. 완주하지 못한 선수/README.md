@@ -67,5 +67,7 @@
 
 <p><a href="http://hsin.hr/coci/archive/2014_2015/contest2_tasks.pdf" target="_blank" rel="noopener">출처</a></p>
 
-
+### 해시맵 getOrDefault 사용
+* #### 이번 문제를 통해 getOrDefault를 사용해서 동명이인에 대한 처리를 value값에 +1을 해서 해결할 수 있었다. 
+  * #### 참여자 동명이인이 2명이라면 value가 2가 되고, 동명이인 중에 한 명만 완주했다면 완주자를 put할 때, -1이 한번만 이루어지기 때문에 value는 0이 되지 않는다.  
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
