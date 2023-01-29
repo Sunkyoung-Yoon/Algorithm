@@ -10,9 +10,9 @@ public class Main {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
 		//DNA 문자열 길이
-		int S = Math.abs(Integer.parseInt(st.nextToken()));
+		int S = Integer.parseInt(st.nextToken());
 		//비밀번호로 사용할 부분문자열의 길이
-		int P = Math.abs(Integer.parseInt(st.nextToken()));
+		int P = Integer.parseInt(st.nextToken());
 		char[] ch = (br.readLine()).toCharArray(); //DNA 문자열
 		check = new int[4]; //{'A','C','G','T'}의 최소 개수
 		arr = new int[4]; // 부분문자열이 가진 {'A','C','G','T'}의 개수
