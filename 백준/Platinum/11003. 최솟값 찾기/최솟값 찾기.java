@@ -36,7 +36,7 @@ public class Main {
 			deque.addLast(i);
 			
 			//인덱스가 L크기를 벗어난 범위라면 맨앞 데이터 제거
-			if(!deque.isEmpty() && deque.getFirst()<=i-L) {
+			if(deque.getFirst()<=i-L) {
 				deque.removeFirst();
 			}
 			
