@@ -2,9 +2,6 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-	static int[] check;
-	static HashMap<Character,Integer> map;
-	
 	public static void main(String[] args) throws IOException{
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
