@@ -2,9 +2,6 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-	static int[] check;
-	static HashMap<Character,Integer> map;
-	
 	public static void main(String[] args) throws IOException{
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -21,7 +18,7 @@ public class Main {
 			//count<=num일 때는 스택 top위치 값이 num이 될 때까지
 			while(count<=num) {
 				stack.push(count);
-				sb.append("+").append("\n");
+				sb.append("+\n");
 				count++;
 			}
 			
@@ -30,7 +27,7 @@ public class Main {
 			//top위치에 num이라면 pop()
 			if(stack.peek()==num) {
 				stack.pop();
-				sb.append("-").append("\n");
+				sb.append("-\n");
 			}
 			//top위치에 num이 아니라면
 			//pop()하는 값이 num이 될 수 없음 (LIFO으로 입력받은 수열 표현 불가)
