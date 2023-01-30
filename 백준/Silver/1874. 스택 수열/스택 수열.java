@@ -26,7 +26,7 @@ public class Main {
 			}
 			
 			
-			//count>=num일 때,
+			//count>num일 때,
 			//top위치에 num이라면 pop()
 			if(stack.peek()==num) {
 				stack.pop();
