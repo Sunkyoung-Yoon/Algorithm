@@ -8,7 +8,6 @@ public class Main {
 		StringBuffer sb = new StringBuffer();
 		
 		int N = Integer.parseInt(br.readLine()); //연산의 개수
-		int[] arr = new int[N];
 		
 		//우선순위 큐 생성 및 정렬기준 재정의
 		PriorityQueue<Integer> queue = new PriorityQueue<>((o1,o2) -> {
