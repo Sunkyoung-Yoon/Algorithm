@@ -62,5 +62,8 @@
 
 <p>힌트가 필요한가요? [코딩테스트 연습 힌트 모음집]으로 오세요! → <a href="https://school.programmers.co.kr/learn/courses/14743?itm_content=lesson12945" target="_blank" rel="noopener">클릭</a></p>
 
+### 1234567로 나눠야 하는 이유 
+* #### 피보나치 수는 44번째만 되도 int형의 범위를 넘어서게 된다. n의 최대 범위를 생각하면 long형 또한 넘어서기 때문에 피보나치 수를 구한 뒤, 1234567로 나눈 나머지를 저장한다면 그 피보나치수는 이미 잘못된 값인 상태이다.
+* #### 피보나치수를 구할 때마다 1234567로 나눈다. (a+b)%n = (a%n + b%n)%n이기 때문에 이 방법이 가능하다.
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
