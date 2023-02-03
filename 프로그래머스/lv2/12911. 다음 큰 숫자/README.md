@@ -60,5 +60,12 @@
 입출력 예#2<br>
 15(1111)의 다음 큰 숫자는 23(10111)입니다.</p>
 
-
+### 효율성 문제
+* #### 아래와 같이 작성하면 효율성 5번 문제에서 틀렸다고 나온다. 
+  * ##### next의 이진변환한 값을 문자열 s2에 저장하고 1 개수를 구했다. 효율성 문제를 통과하려면 이 부분을 일일이 구하면 안된다.
+            count_s2 = s2.length();
+            s2 = s2.replace("1","");
+            count_s2 -= s2.length();
+* #### Integer.bitCount(int a) 메소드는 이진수에서 1의 개수를 리턴해준다. 
+  * ##### 위에서 직접구했던 부분을 count_s2 = Integer.bitCount(next);로 작성하면 효율성 문제를 통과한다.
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
