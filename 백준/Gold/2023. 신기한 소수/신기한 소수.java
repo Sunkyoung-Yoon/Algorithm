@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.*;
 
 public class Main {
 	//소수인 N자리 숫자나올 때마다 sb에 저장
@@ -22,14 +23,15 @@ public class Main {
 	public static void dfs(int num, int n) {
 		//숫자의 자릿수가 N이 된다면
 		if(n==1) {
-			//소수라면
-			if(isPrime(num)) sb.append(num+"\n");
+			sb.append(num+"\n");
 			return;
 		}
 		
-		
-		//0~9자리 숫자중에 하나 붙여서 num으로 만든다.
-		for(int i=0; i<10; i++) {
+		//0~9자리숫자 1,3,7,9중에 하나 붙여서 num으로 만든다.
+		//마지막 자리가 짝수인 경우 소수가 아님
+		for(int i=1; i<10; i+=2) {
+			if(i==5) continue;
+			
 			//소수라면 다음숫자 붙이기
 			if(isPrime(num*10+i)){
 				dfs(num*10+i,n-1);
