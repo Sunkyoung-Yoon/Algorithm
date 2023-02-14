@@ -2,14 +2,16 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-	public static ArrayList<Integer>[] arrayList; //그래프를 표현할 인접리스트
-	public static boolean[] visited; //방문체크할 배열
+	static ArrayList<Integer>[] arrayList; //그래프를 표현할 인접리스트
+	static boolean[] visited; //방문체크할 배열
+	static StringBuffer sb = new StringBuffer();
 	
 	public static void main(String[] args) throws IOException{
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
 		StringTokenizer st = new StringTokenizer(br.readLine());
-
+		
+		
 		int N = Integer.parseInt(st.nextToken()); //정점(노드) 수
 		int M = Integer.parseInt(st.nextToken()); //간선 수
 		int V = Integer.parseInt(st.nextToken()); //시작 노드번호
@@ -41,11 +43,13 @@ public class Main {
 		}
 		
 		dfs(V); 
-		System.out.println();
+		sb.append("\n");
 		
 		//다시 탐색하기 위해 방문배열 초기화
 		visited = new boolean[N+1];
 		bfs(V);
+		
+		System.out.println(sb);
 		
 	}
 	
@@ -54,7 +58,7 @@ public class Main {
 	public static void dfs(int now) {
 		visited[now] = true; //방문표시
 		
-		System.out.print(now+" "); //방문한 노드 출력
+		sb.append(now+" "); //방문한 노드 출력
 		
 		//현재 노드의 인접한 노드 방문체크
 		for(int n : arrayList[now]) {
@@ -74,10 +78,9 @@ public class Main {
 		
 		//큐가 빌 때까지
 		while(!queue.isEmpty()) {
-			//현재 노드 
-			int now = queue.poll();
-			
-			System.out.print(now+" "); //현재 노드 출력
+
+			int now = queue.poll(); //현재 노드 
+			sb.append(now+" "); //현재 노드 출력
 			
 			//현재 노드의 인접한 노드 방문체크
 			for(int n : arrayList[now]) {
