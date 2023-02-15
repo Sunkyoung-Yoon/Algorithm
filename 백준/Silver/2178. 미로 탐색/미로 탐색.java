@@ -4,8 +4,8 @@ import java.util.*;
 public class Main {
 	static int[][] maze; //미로
 	static boolean[][] visited; //방문체크할 배열
-	static int[] dx = {1,-1,0,0}; //x 상하 
-	static int[] dy = {0,0,1,-1}; //y 좌우
+	static int[] dx = {-1,1,0,0}; //x 상하  
+	static int[] dy = {0,0,-1,1}; //y 좌우
 	static int N;
 	static int M;
 	
