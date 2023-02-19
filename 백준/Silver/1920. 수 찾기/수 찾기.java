@@ -31,7 +31,7 @@ public class Main {
 	}
 	
 	
-    //너비우선탐색
+    //이진 탐색
 	public static int binarySearch(int[] A, int find) {
 		int start = 0;
 		int end = A.length-1;
