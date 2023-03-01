@@ -2,38 +2,37 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-
 	public static void main(String[] args) throws IOException{
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
 		int M = Integer.parseInt(st.nextToken());
 		int N = Integer.parseInt(st.nextToken());
 		
-		for(int num=M; num<=N; num++) {
-			boolean flag = true;
-            
-            if(num==1) //1인 경우는 제외
-				continue;
-			
-            //제곱근을 활용하여 구하기
-            /*
-            ex) 12의 약수 1,2,3,4,6,12 (1-12, 2-6, 3-4)이 짝을 이룬다.
-            12의 제곱근 3.xx 즉, 제곱근까지만 확인해도 약수 존재를 확인할 수 있다.
-            */
-			for(int j=2; j<=Math.sqrt(num); j++) {
-				if(num%j==0) {
-					flag=false;
-					break;
-				}
+		boolean[] check = new boolean[N+1];
+		
+		
+		//M이 1인경우도 있으므로 소수가 아닌수라는 의미로 true로 변경
+		check[1] = true;
+		
+		//소수가 아닌 수 true
+		for(int i=2; i<=Math.sqrt(N); i++) {
+			for(int j=i*i; j<=N; j+=i) {
+				//이미 소수가 아니라고 판별된 수는 continue
+				if(check[j]) continue;
+				
+				check[j] = true;
 			}
-			
-			if(flag)
-				System.out.println(num);
 		}
 		
 		
+		//소수 한줄에 하나씩 출력
+		for(int i=M; i<=N; i++) {
+			if(!check[i]) {
+				System.out.println(i);
+			}
+		}
 		
-	}
+	}	
 }
