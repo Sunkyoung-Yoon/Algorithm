@@ -26,7 +26,7 @@ public class Main {
 		
 		
 		int count = 0;
-		//소수리스트를 돌며 범위내에 거의소수 개수 확인
+		//check배열을 탐색하며 범위내에 거의 소수 개수 확인
 		for(int i=2; i<=check.length-1; i++) {
 			
 			if(check[i]) continue;
