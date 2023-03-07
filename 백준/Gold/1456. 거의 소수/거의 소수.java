@@ -10,7 +10,7 @@ public class Main {
 		long A = Long.parseLong(st.nextToken());
 		long B = Long.parseLong(st.nextToken());
 		
-		//10의7승+1 크기의 배열 생성
+		//10^7+1 크기의 배열 생성
 		boolean[] check = new boolean[10000001];
 		
 		//소수가 아닌수 true로 변경
