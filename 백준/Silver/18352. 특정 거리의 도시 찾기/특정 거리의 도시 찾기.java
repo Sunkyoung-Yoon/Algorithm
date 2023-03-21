@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-	static ArrayList<Integer>[] A; //인접리스트
+	static ArrayList<Integer>[] list; //인접리스트
 	static int visited[]; //X와의 거리
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -14,10 +14,10 @@ public class Main {
 		int K = Integer.parseInt(st.nextToken());
 		int X = Integer.parseInt(st.nextToken());
 		
-		A = new ArrayList[N+1];
+		list = new ArrayList[N+1];
 		visited = new int[N+1];
 		for(int i=1; i<=N; i++) {
-			A[i] = new ArrayList<Integer>();
+			list[i] = new ArrayList<Integer>();
 			//거리를 저장할 배열 -1로 초기화
 			visited[i] = -1; 
 		}
@@ -27,7 +27,7 @@ public class Main {
 			st = new StringTokenizer(br.readLine());
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
-			A[a].add(b);
+			list[a].add(b);
 		}
 		
 		//시작 노드 0으로 변경
@@ -55,7 +55,7 @@ public class Main {
 			int now = queue.poll();
 			
 			//now와 연결된 노드 탐색
-			for(int n: A[now]) {
+			for(int n: list[now]) {
 				//방문한 적 없다면
 				if(visited[n]==-1) {
 					queue.add(n);
