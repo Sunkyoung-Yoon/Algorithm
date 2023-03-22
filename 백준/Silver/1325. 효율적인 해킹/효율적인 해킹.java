@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
 	static ArrayList<Integer>[] A; //인접리스트
 	static boolean visited[]; //방문 체크
-	static int[] result; //해킹가능한 경우 체크 
+	static int[] result; //방문 횟수 체크 
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
@@ -12,7 +12,7 @@ public class Main {
 		
 		int N = Integer.parseInt(st.nextToken());
 		int M = Integer.parseInt(st.nextToken());
-		int max = 0; //해킹 가능한 경우 최댓값
+		int max = 0; //방문 횟수 최댓값
 		
 		A = new ArrayList[N+1];
 		result = new int[N+1];
@@ -29,13 +29,13 @@ public class Main {
 		}
 		
 		
-		//모든 노드 bfs, 해킹 가능한 경우 세기
+		//모든 노드 bfs, 방문 횟수 세기
 		for(int i=1; i<=N; i++) {
 			visited = new boolean[N+1];
 			bfs(i);
 		}
 		
-		//해킹 가능한 경우 최댓값 max에 저장
+		//방문 횟수 최댓값 max에 저장
 		for(int i=1; i<=N; i++) {
 			max = Math.max(max, result[i]);
 		}
@@ -62,7 +62,7 @@ public class Main {
 				if(!visited[n]) {
 					queue.add(n);
 					visited[n]=true;
-					//n을 해킹할 수 있는 경우로 result증가
+					//방문횟수 result증가
 					result[n]++;
 				}
 			}
