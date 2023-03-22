@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-	static ArrayList<Integer>[] A; //인접리스트
+	static ArrayList<Integer>[] list; //인접리스트
 	static boolean visited[]; //방문 체크
 	static int[] result; //방문 횟수 체크 
 	public static void main(String[] args) throws IOException{
@@ -14,10 +14,10 @@ public class Main {
 		int M = Integer.parseInt(st.nextToken());
 		int max = 0; //방문 횟수 최댓값
 		
-		A = new ArrayList[N+1];
+		list = new ArrayList[N+1];
 		result = new int[N+1];
 		for(int i=1; i<=N; i++) {
-			A[i] = new ArrayList<Integer>(); 
+			list[i] = new ArrayList<Integer>(); 
 		}
 		
 		//신뢰 정보 저장
@@ -25,7 +25,7 @@ public class Main {
 			st = new StringTokenizer(br.readLine());
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
-			A[a].add(b);
+			list[a].add(b);
 		}
 		
 		
@@ -57,7 +57,7 @@ public class Main {
 			int now = queue.poll();
 			
 			//now와 연결된 노드 탐색
-			for(int n: A[now]) {
+			for(int n: list[now]) {
 				//방문한 적 없다면
 				if(!visited[n]) {
 					queue.add(n);
