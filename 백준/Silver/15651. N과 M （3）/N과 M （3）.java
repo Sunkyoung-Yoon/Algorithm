@@ -7,7 +7,6 @@ import java.util.StringTokenizer;
 public class Main {
     public static int N, M;
     public static int[] arr;
-    public static boolean[] visited;
     public static StringBuilder sb = new StringBuilder();
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -17,7 +16,6 @@ public class Main {
         M = Integer.parseInt(st.nextToken());
 
         arr = new int[N];
-        visited = new boolean[N];
 
         dfs(0);
         System.out.println(sb);
