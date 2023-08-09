@@ -2,41 +2,37 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-	
+
 	public static void main(String[] args) throws IOException{
-		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
 		StringBuilder sb = new StringBuilder();
 		
 		int N = Integer.parseInt(br.readLine());
-		//상근이가 가지고 있는 숫자 카드
-		HashMap<Integer, Integer> map = new HashMap<>(); 
+		HashMap<Integer, Integer> map = new HashMap<>();
 		
-		
-		//카드 숫자,개수 해시맵에 저장
+		// 상근이가 가지고 있는 카드 map <카드, 개수>
 		st = new StringTokenizer(br.readLine());
-		for(int i=1; i<=N; i++) {
-			int num = Integer.parseInt(st.nextToken());
-			if(map.get(num)==null) {
-				map.put(num, 1);
-			}
-			else {
-				int count = map.get(num);
-				map.put(num, ++count);
-			}
+		for(int i=0; i<N; i++) {
+			int key = Integer.parseInt(st.nextToken());
+			map.put(key, map.getOrDefault(key, 0)+1);
 		}
 		
+		// 개수를 구해야할  카드
 		int M = Integer.parseInt(br.readLine());
 		st = new StringTokenizer(br.readLine());
 		for(int i=0; i<M; i++) {
-			int num = Integer.parseInt(st.nextToken());
-			if(map.get(num)==null)
-				sb.append(0+" ");
-			else
-				sb.append(map.get(num)+" ");
+			int key = Integer.parseInt(st.nextToken());
+			
+			// 상근이가 가지고 있다면 개수 저장, 없다면 0 저장
+			if(map.containsKey(key)) {
+				sb.append(map.get(key)+" ");
+			}
+			else {
+				sb.append("0 ");
+			}
 		}
-		System.out.println(sb);
 		
+		System.out.println(sb);
 	}
 }
