@@ -1,59 +1,52 @@
-import java.io.*;
 import java.util.*;
+import java.io.*;
 
 public class Main {
-	static int[][] map;
-	static boolean[][] visited;
-	static int N;
-	static int M;
-	static int count;
+	static int N,M;
+	static int[][] maze; //미로 저장
+	static boolean[][] visited; //방문체크
+	static int[] di = {-1,1,0,0}; //상하좌우
+	static int[] dj = {0,0,-1,1};
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
-		map = new int[N][M];
-		visited = new boolean[N][M];
 		
+		maze = new int[N][M]; //미로 초기화
 		// 미로 저장
 		for(int i=0; i<N; i++) {
 			String s = br.readLine();
 			for(int j=0; j<M; j++) {
-				map[i][j] = Integer.parseInt(s.substring(j,j+1));
+				maze[i][j] = s.charAt(j)-'0';
 			}
 		}
 		
-		bfs(0,0); // 0,0시작 N-1,M-1도착
-		System.out.println(map[N-1][M-1]);
+		visited = new boolean[N][M]; //방문체크배열 초기화
+		bfs(0,0);
+		
+		System.out.println(maze[N-1][M-1]);
 	}
 	
-	static int[]di = {-1,1,0,0}; // 상하좌우
-	static int[]dj = {0,0,-1,1};
-	static void bfs(int start_x, int start_y) {
+	static void bfs(int starti, int startj) {
 		Queue<int[]> queue = new LinkedList<>();
-		visited[start_x][start_y] = true;
-		queue.add(new int[] {start_x, start_y});
+		queue.add(new int[] {starti, startj});
+		visited[starti][startj] = true;
 		
 		while(!queue.isEmpty()) {
 			int[] now = queue.poll();
-			int now_x = now[0];
-			int now_y = now[1];
 			
 			for(int d=0; d<4; d++) {
-				int nextx = now_x + di[d];
-				int nexty = now_y + dj[d];
+				int nexti = now[0]+di[d];
+				int nextj = now[1]+dj[d];
 				
-				//이동 가능한 좌표인지 체크
-				if(nextx>=0 && nexty>=0 && nextx<N && nexty<M) {
-					if(map[nextx][nexty]==1 && !visited[nextx][nexty]) {
-						visited[nextx][nexty] = true;
-						count++;
-						queue.add(new int[] {nextx, nexty});
-						
-						// 이동 전 좌표의 값 +1을 값으로 저장
-						map[nextx][nexty] = map[now_x][now_y]+1;
-					}
+				// 미로내 범위이고 방문하지 않은 곳이면서 1이라면
+				if(nexti>=0 && nexti<N && nextj>=0 && nextj<M &&
+						!visited[nexti][nextj] && maze[nexti][nextj]==1) {
+					queue.add(new int[] {nexti, nextj});
+					visited[nexti][nextj] = true;
+					maze[nexti][nextj] += maze[now[0]][now[1]]; // 이동시간을 더해가면서 이동
 				}
 			}
 		}
