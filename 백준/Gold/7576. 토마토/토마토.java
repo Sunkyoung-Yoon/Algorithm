@@ -7,13 +7,13 @@ public class Main {
 	static int[] di = {-1,1,0,0};
 	static int[] dj = {0,0,-1,1};
 	static int max; //모든 토마토가 익을떄까지 걸리는 일수
+	static Queue<int[]> queue = new LinkedList<>();
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
 		M = Integer.parseInt(st.nextToken()); // 상자의 가로 칸수
 		N = Integer.parseInt(st.nextToken()); // 상자의 세로 칸수
-		ArrayList<int[]> list = new ArrayList<>(); // 토마토가 있는 자리를 저장할 리스트
 		
 		box = new int[N][M];
 		// 박스에 토마토 정보 저장
@@ -24,13 +24,14 @@ public class Main {
 				
 				// 토미토가 있는 자리 기억
 				if(box[i][j] == 1) {
-					list.add(new int[] {i, j});
+					// 토마토가 있는 좌표 큐에 넣기
+					queue.add(new int[] {i, j});
 				}
 			}
 		}
 		
 		max = 0;
-		bfs(list);
+		bfs();
 		
 		if(!check()) System.out.println(-1);
 		// 처음 토마토가 1인 상태에서 하나씩 더해서 갔기 때문에 -1해줘야 한다
@@ -39,13 +40,7 @@ public class Main {
 	}
 	
 	
-	static void bfs(ArrayList<int[]> list) {
-		Queue<int[]> queue = new LinkedList<>();
-		// 토마토가 있는 좌표 큐에 넣기
-		for(int i=0; i<list.size(); i++) {
-			queue.add(list.get(i));
-		}
-		
+	static void bfs() {
 		while(!queue.isEmpty()) {
 			int[] now = queue.poll();
 			
