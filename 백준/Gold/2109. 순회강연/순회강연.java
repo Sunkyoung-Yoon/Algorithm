@@ -3,16 +3,6 @@ import java.io.*;
 
 public class Main {
 	
-	static class Schedule{
-		int p;
-		int d;
-		public Schedule(int p, int d) {
-			super();
-			this.p = p;
-			this.d = d;
-		}
-	}
-	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
@@ -55,4 +45,13 @@ public class Main {
 		System.out.println(result);
 	}
 
+	static class Schedule{
+		int p;
+		int d;
+		public Schedule(int p, int d) {
+			super();
+			this.p = p;
+			this.d = d;
+		}
+	}
 }
