@@ -58,6 +58,11 @@ public class Solution {
 				minCost = Math.min(minCost, now.cost);
 			}
 			
+			// 도착지에 도달 전에 이미 이전에 도달햇을 때 경우보다 비용이 크다면 더 탐색할 필요x
+			if(now.cost > minCost) {
+				continue;
+			}
+			
 			for(int d=0; d<4; d++) {
 				int nexti = now.i+di[d];
 				int nextj = now.j+dj[d];
